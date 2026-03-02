@@ -1,5 +1,8 @@
 import React from 'react'
 import { ServicesCard } from '../components/ServicesCard'
+import { Buit } from '../components/Buit'
+
+
 
 export const Careers = () => {
     return (
@@ -21,23 +24,25 @@ export const Careers = () => {
                     <div>
                         <div className="d-flex justify-content-center h-100 gap-5 mt-5  ">
                             {/* liga */}
-                            <img src="./hollooow.jpg" width={900} alt="" />
+                            <img className="border border-5 rounded-5"src="./hollooow.jpg" width={900} alt="" />
                         </div>
 
 
                     </div>
-                    <div className="" >
+                    <div className="mt-5" >
                         <div className='d-flex justify-content-center h-100 gap-5 mt-5'>
                             <div>
                                 {/* contenido */}
                                 <h1 className='fs-1 container text-center'>What you'll get</h1>
-                                
                             </div>
                         </div>
                     </div>
 
                 </div>
+                <ServicesCard/>
+                <Buit/>
             </div>
+           
         </>
     )
 }
