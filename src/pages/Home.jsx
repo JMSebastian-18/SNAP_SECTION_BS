@@ -1,6 +1,7 @@
 import React from 'react'
 /*  */
 import "../stylesheets/Home.css"
+import { Link } from 'react-router-dom'
 
 export const Home = () => {
     return (
