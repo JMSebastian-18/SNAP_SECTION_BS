@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Header } from '../components/Header'
 
 export const About = () => {
     return (
         <>
+        <Header/>
             <div className="container">
                 <div className="row mt-5 ">
                     <div className="col">

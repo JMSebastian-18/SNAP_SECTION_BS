@@ -1,12 +1,14 @@
 import React from 'react'
 import { ServicesCard } from '../components/ServicesCard'
 import { Buit } from '../components/Buit'
+import { Header } from '../components/Header'
 
 
 
 export const Careers = () => {
     return (
         <>
+        <Header/>
             <div className="container">
                 <div className="row mt-5">
                     <div className="col" >

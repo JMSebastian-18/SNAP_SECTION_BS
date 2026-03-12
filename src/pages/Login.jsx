@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Header } from "../components/Header";
 
 export const Login = () => {
+    
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
@@ -46,6 +48,8 @@ export const Login = () => {
     const requiredStar = <span style={{ color: "#ef4444", marginLeft: "2px" }}>*</span>;
 
     return (
+        <>
+        <Header/>
         <div
             style={{
                 maxWidth: "480px",
@@ -125,5 +129,6 @@ export const Login = () => {
             </button>
             
         </div>
+        </>
     );
 }

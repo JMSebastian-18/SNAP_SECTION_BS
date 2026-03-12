@@ -2,10 +2,12 @@ import React from 'react'
 /*  */
 import "../stylesheets/Home.css"
 import { Link } from 'react-router-dom'
+import { Header } from '../components/Header'
 
 export const Home = () => {
     return (
         <>
+        <Header/>
             <div className="container">
                 <div className="row">
                     <div className="col-6" >

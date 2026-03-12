@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Header } from "../components/Header";
 
 export const Register = () => {
+    
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
@@ -46,17 +48,20 @@ export const Register = () => {
     const requiredStar = <span style={{ color: "#ef4444", marginLeft: "2px" }}>*</span>;
 
     return (
+        <>
+        <Header/>
         <div
-            style={{
-                maxWidth: "480px",
-                margin: "40px auto",
-                padding: "32px",
+        style={{
+            maxWidth: "480px",
+            margin: "40px auto",
+            padding: "32px",
                 background: "#fff",
                 borderRadius: "12px",
                 boxShadow: "0 2px 16px rgba(0,0,0,0.08)",
                 fontFamily: "'Segoe UI', sans-serif",
             }}
         >
+            
             <h2 style={{ fontSize: "22px", fontWeight: "700", marginBottom: "24px", color: "#111827" }}>
                 Register
             </h2>
@@ -85,7 +90,7 @@ export const Register = () => {
                         style={inputStyle}
                         onFocus={(e) => (e.target.style.borderColor = "#1a7a5e")}
                         onBlur={(e) => (e.target.style.borderColor = "#d1d5db")}
-                    />
+                        />
                 </div>
             </div>
 
@@ -165,5 +170,6 @@ export const Register = () => {
                 Register
             </button>
         </div>
+        </>
     );
 }
